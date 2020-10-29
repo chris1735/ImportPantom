@@ -179,7 +179,8 @@ public class MainActivity extends AppCompatActivity {
         }
         // Request for missing permissions
         if (missingPermission.isEmpty()) {
-            startSDKRegistration();
+            System.out.println("Permission is ok!");
+//            startSDKRegistration();
         } else if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
             showToast("Need to grant the permissions!");
             ActivityCompat.requestPermissions(this,
@@ -207,7 +208,8 @@ public class MainActivity extends AppCompatActivity {
         }
         // If there is enough permission, we will start the registration
         if (missingPermission.isEmpty()) {
-            startSDKRegistration();
+            System.out.println("Permission is ok!");
+//            startSDKRegistration();
         } else {
             showToast("Missing permissions!!!");
         }
@@ -244,6 +246,7 @@ public class MainActivity extends AppCompatActivity {
                             notifyStatusChange();
 
                         }
+
                         @Override
                         public void onProductConnect(BaseProduct baseProduct) {
                             System.out.println("~~SDKManagerCallback.onProductConnect~~");
@@ -309,6 +312,7 @@ public class MainActivity extends AppCompatActivity {
 
         @Override
         public void run() {
+            System.out.println("~~updateRunnable.run~~");
             Intent intent = new Intent(FLAG_CONNECTION_CHANGE);
             sendBroadcast(intent);
         }
@@ -320,6 +324,7 @@ public class MainActivity extends AppCompatActivity {
         handler.post(new Runnable() {
             @Override
             public void run() {
+                System.out.println("LOG|" + toastMsg);
                 Toast.makeText(getApplicationContext(), toastMsg, Toast.LENGTH_LONG).show();
             }
         });

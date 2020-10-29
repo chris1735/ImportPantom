@@ -44,7 +44,7 @@
         <uses-library android:name="org.apache.http.legacy" android:required="false" />
         <meta-data
             android:name="com.dji.sdk.API_KEY"
-            android:value="214be360a9b5b774aea3f637" />
+            android:value="a77b1828d75f798378dd0c32" />
 
         <!-- DJI SDK -->
 

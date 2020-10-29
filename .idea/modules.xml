@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ImportSDKDemo.iml" filepath="$PROJECT_DIR$/.idea/modules/ImportSDKDemo.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/ImportSDKDemo.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/ImportSDKDemo.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/import.iml" filepath="$PROJECT_DIR$/.idea/modules/import.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/import.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/import.app.iml" />
     </modules>
   </component>
 </project>

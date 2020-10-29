@@ -55,7 +55,4 @@ public class TheApplication extends Application {
         System.out.println("Helper.install end");
     }
 
-
-
-
 }
